@@ -10,7 +10,7 @@ isTop: false
 # qklg.net by andylee
 
 📧 邮箱: [qklg@qklg.net](mailto:qklg@qklg.net) 
-🌐 探针: [https://kkb.lol/](https://kkb.lol/)
+🌐 探针: [https://qklg.de/](https://qklg.de/)
 
 
 本站托管于Cloudflare Pages  <https://pages.cloudflare.com/>
