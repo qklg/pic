@@ -1,0 +1,66 @@
+proxy-groups:
+  - {name: 🚀 节点选择, include-all: true, type: select, proxies: [♻️ 自动选择, DIRECT]}
+  - {name: ♻️ 自动选择, type: url-test,  url: https://www.gstatic.com/generate_204, include-all: true, interval: 300, tolerance: 50}
+  - {name: 📲 电报信息, include-all: true, type: select, proxies: [🚀 节点选择, 🎯 全球直连, ♻️ 自动选择]}
+  - {name: 💬 人工智能, include-all: true, type: select, proxies: [🚀 节点选择, 🎯 全球直连, ♻️ 自动选择]}
+  - {name: 🌍 国外媒体, include-all: true, type: select, proxies: [🚀 节点选择, 🎯 全球直连, ♻️ 自动选择]}
+  - {name: 📺 巴哈姆特, include-all: true, type: select, proxies: [🚀 节点选择, 🎯 全球直连, ♻️ 自动选择]}
+  - {name: 📹 油管视频, include-all: true, type: select, proxies: [🚀 节点选择, 🎯 全球直连, ♻️ 自动选择]}  
+  - {name: 📢 谷歌服务, include-all: true, type: select, proxies: [🚀 节点选择, 🎯 全球直连, ♻️ 自动选择]}
+  - {name: Ⓜ️ 微软服务, include-all: true, type: select, proxies: [🚀 节点选择, 🎯 全球直连, ♻️ 自动选择]}
+  - {name: 🍎 苹果服务, include-all: true,  type: select, proxies: [🚀 节点选择, 🎯 全球直连, ♻️ 自动选择]}
+  - {name: 🎯 全球直连, type: select, proxies: [DIRECT]}
+  - {name: 🛑 全球拦截, type: select, proxies: [REJECT]}
+  - {name: 🐟 漏网之鱼, include-all: true, type: select, proxies: [🚀 节点选择, 🎯 全球直连, ♻️ 自动选择]}
+
+rule-providers:
+  jsproxy: {behavior: classical, type: http, url: "https://quantil.jsdelivr.net/gh/qklg/pic@master/ruleset/jsproxy.yaml", interval: 86400, path: ./ACL4SSR/jsproxy.yaml}
+  LocalAreaNetwork: {behavior: classical, type: http, url: "https://quantil.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/LocalAreaNetwork.yaml", interval: 86400, path: ./ACL4SSR/LocalAreaNetwork.yaml}
+  UnBan: {behavior: classical, type: http, url: "https://quantil.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/UnBan.yaml", interval: 86400, path: ./ACL4SSR/UnBan.yaml}
+  ChinaIp: {behavior: ipcidr, type: http, url: "https://quantil.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/ChinaIp.yaml", interval: 86400, path: ./ACL4SSR/ChinaIp.yaml}  
+  ChinaDomain: {behavior: classical, type: http, url: "https://quantil.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/ChinaDomain.yaml", interval: 86400, path: ./ACL4SSR/ChinaDomain.yaml}
+  ChinaCompanyIp: {behavior: ipcidr, type: http, url: "https://quantil.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/ChinaCompanyIp.yaml", interval: 86400, path: ./ACL4SSR/ChinaCompanyIp.yaml}
+  SteamRegionCheck: {behavior: classical, type: http, url: "https://quantil.jsdelivr.net/gh/qklg/pic@master/ruleset/SteamRegionCheck.yaml", interval: 86400, path: ./ACL4SSR/SteamRegionCheck.yaml}
+  Google: {behavior: classical, type: http, url: "https://quantil.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/Ruleset/Google.yaml", interval: 86400, path: ./ACL4SSR/Google.yaml}
+  GoogleCN: {behavior: classical, type: http, url: "https://quantil.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/Ruleset/GoogleCN.yaml", interval: 86400, path: ./ACL4SSR/GoogleCN.yaml}
+  GoogleFCM: {behavior: classical, type: http, url: "https://quantil.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/Ruleset/GoogleFCM.yaml", interval: 86400, path: ./ACL4SSR/GoogleFCM.yaml}  
+  YouTube: {behavior: classical, type: http, url: "https://quantil.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/Ruleset/YouTube.yaml", interval: 86400, path: ./ACL4SSR/YouTube.yaml}    
+  ProxyLite: {behavior: classical, type: http, url: "https://quantil.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/ProxyLite.yaml", interval: 86400, path: ./ACL4SSR/ProxyLite.yaml}
+  Telegram: {behavior: classical, type: http, url: "https://quantil.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/Ruleset/Telegram.yaml", interval: 86400, path: ./ACL4SSR/Telegram.yaml}
+  AI: {behavior: classical, type: http, url: "https://quantil.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/Ruleset/AI.yaml", interval: 86400, path: ./ACL4SSR/AI.yaml}
+  Bahamut: {behavior: classical, type: http, url: "https://quantil.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/Ruleset/Bahamut.yaml", interval: 86400, path: ./ACL4SSR/Bahamut.yaml}
+  Microsoft: {behavior: classical, type: http, url: "https://quantil.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/Ruleset/Microsoft.yaml", interval: 86400, path: ./ACL4SSR/Microsoft.yaml}
+  OneDrive: {behavior: classical, type: http, url: "https://quantil.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/Ruleset/OneDrive.yaml", interval: 86400, path: ./ACL4SSR/OneDrive.yaml}
+  Apple: {behavior: classical, type: http, url: "https://quantil.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/Ruleset/Apple.yaml", interval: 86400, path: ./ACL4SSR/Apple.yaml}
+  BanAD: {behavior: classical, type: http, url: "https://quantil.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/BanAD.yaml", interval: 86400, path: ./ACL4SSR/BanAD.yaml}
+  BanProgramAD: {behavior: classical, type: http, url: "https://quantil.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/BanProgramAD.yaml", interval: 86400, path: ./ACL4SSR/BanProgramAD.yaml}
+  BanEasyList: {behavior: classical, type: http, url: "https://quantil.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/BanEasyList.yaml", interval: 86400, path: ./ACL4SSR/BanEasyList.yaml}
+  ProxyMedia: {behavior: classical, type: http, url: "https://quantil.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/ProxyMedia.yaml", interval: 86400, path: ./ACL4SSR/ProxyMedia.yaml}
+
+rules:
+  - IP-CIDR,221.228.32.0/24,🚀 节点选择
+  - DOMAIN-SUFFIX,lowendtalk.com,🎯 全球直连  
+  - RULE-SET,jsproxy,🚀 节点选择 
+  - RULE-SET,OneDrive,🚀 节点选择  
+  - RULE-SET,Microsoft,Ⓜ️ 微软服务
+  - RULE-SET,Apple,🍎 苹果服务
+  - RULE-SET,LocalAreaNetwork,🎯 全球直连
+  - RULE-SET,UnBan,🎯 全球直连
+  - RULE-SET,ChinaIp,🎯 全球直连  
+  - RULE-SET,ChinaDomain,🎯 全球直连
+  - RULE-SET,ChinaCompanyIp,🎯 全球直连
+  - RULE-SET,SteamRegionCheck,🎯 全球直连
+  - RULE-SET,YouTube,📹 油管视频
+  - RULE-SET,Google,📢 谷歌服务 
+  - RULE-SET,GoogleCN,📢 谷歌服务
+  - RULE-SET,GoogleFCM,📢 谷歌服务
+  - RULE-SET,Telegram,📲 电报信息
+  - RULE-SET,AI,💬 人工智能
+  - DOMAIN-SUFFIX,imgur.com,💬 人工智能
+  - RULE-SET,Bahamut,📺 巴哈姆特  
+  - RULE-SET,ProxyMedia,🌍 国外媒体
+  - RULE-SET,ProxyLite,🚀 节点选择
+  - RULE-SET,BanAD,🛑 全球拦截
+  - RULE-SET,BanProgramAD,🛑 全球拦截
+  - RULE-SET,BanEasyList,🛑 全球拦截
+  - MATCH,🐟 漏网之鱼
