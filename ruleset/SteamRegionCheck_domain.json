@@ -1,0 +1,55 @@
+{
+  "version": 2,
+  "rules": [
+    {
+      "domain": [
+        "ext1-hkg1.steamserver.net",
+        "ext2-hkg1.steamserver.net",
+        "ext3-hkg1.steamserver.net",
+        "ext4-hkg1.steamserver.net",
+        "ext5-hkg1.steamserver.net",
+        "ext6-hkg1.steamserver.net",
+        "ext7-hkg1.steamserver.net",
+        "ext1-tyo3.steamserver.net",
+        "ext2-tyo3.steamserver.net",
+        "ext3-tyo3.steamserver.net",
+        "ext4-tyo3.steamserver.net",
+        "ext1-sgp1.steamserver.net",
+        "ext2-sgp1.steamserver.net",
+        "ext3-sgp1.steamserver.net",
+        "ext4-sgp1.steamserver.net",
+        "ext1-lax1.steamserver.net",
+        "ext2-lax1.steamserver.net",
+        "csgo.wmsj.cn",
+        "dota2.wmsj.cn",
+        "wmsjsteam.com",
+        "dl.steam.clngaa.com",
+        "dl.steam.ksyna.com",
+        "st.dl.bscstorage.net",
+        "st.dl.eccdnx.com",
+        "st.dl.pinyuncloud.com",
+        "steampipe.steamcontent.tnkjmec.com",
+        "steampowered.com.8686c.com",
+        "steamstatic.com.8686c.com",
+        "xz.pphimalayanrt.com",
+        "gstore.val.manlaxy.com",
+        "cdn.mileweb.cs.steampowered.com",
+        "cdn-ws.content.steamchina.com",
+        "cdn-qc.content.steamchina.com",
+        "cdn-ali.content.steamchina.com",
+        "lv.queniujq.cn",
+        "alibaba.cdn.steampipe.steamcontent.com",
+        "st-dl-eccdnx.tliveapp.com"
+      ],
+      "domain_suffix": [
+        "cm.steampowered.com",
+        "steamserver.net",
+        "steamcontent.com",
+        "steamusercontent.com",
+        "steamchina.com",
+        "8686c.com"
+      ],
+      "domain_keyword": []
+    }
+  ]
+}
