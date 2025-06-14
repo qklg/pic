@@ -1,0 +1,24 @@
+{
+  "version": 2,
+  "rules": [
+    {
+      "domain": [],
+      "domain_suffix": [
+        "linux.do",
+        "xiaoz.org",
+        "daniao.org",
+        "guozeyu.com",
+        "xlog.app",
+        "frostsky.com",
+        "github.com",
+        "github.io",
+        "githubapp.com",
+        "githubassets.com",
+        "githubusercontent.com"
+      ],
+      "domain_keyword": [
+        "github"
+      ]
+    }
+  ]
+}
